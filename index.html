@@ -5,23 +5,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BMI Calculator Software</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: white;
+            font-size: 36px;
+            margin: 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        section {
+            padding: 40px 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .download-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .download-button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            margin-top: 40px;
+        }
+
+        @media screen and (max-width: 768px) {
+            section {
+                padding: 20px;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>BMI Calculator Software</h1>
         <nav>
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#features">Features</a></li>
                 <li><a href="#download">Download</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="about">
-        <h2>About</h2>
-        <p>This software helps you calculate your Body Mass Index (BMI) and provides personalized health messages.</p>
+    <section id="download">
+        <h2>Download</h2>
+        <a class="download-button" href="https://drive.google.com/file/d/1nb6o8VfHTi43kZtHchJkU9enOwQeR0G7/view?usp=sharing" target="_blank">Download BMI Calculator</a>
     </section>
 
     <section id="features">
@@ -30,12 +110,13 @@
             <li>Easy to use interface</li>
             <li>Customizable health messages</li>
             <li>Downloadable for multiple platforms</li>
+            <li>Personalized BMI report generation</li>
         </ul>
     </section>
 
-    <section id="download">
-        <h2>Download</h2>
-        <a class="download-button" href="https://drive.google.com/file/d/1nb6o8VfHTi43kZtHchJkU9enOwQeR0G7/view?usp=sharing" target="_blank">Download BMI Calculator</a>
+    <section id="about">
+        <h2>About</h2>
+        <p>This software helps you calculate your Body Mass Index (BMI) and provides personalized health messages based on your BMI result. Stay healthy with our BMI Calculator!</p>
     </section>
 
     <section id="contact">
@@ -49,4 +130,5 @@
     </footer>
 </body>
 </html>
+
 
